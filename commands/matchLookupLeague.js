@@ -3,7 +3,7 @@ const fetch = require('node-fetch');
 var LEAGUE_API_KEY = process.env.LEAGUE_API_KEY
 module.exports = {
     data: new SlashCommandBuilder()
-        .setName('recent-match')
+        .setName('recentleaguematch')
         .setDescription('Finds the most recent match from a given League of Legends account.')
         .addStringOption(option => option.setName('username').setDescription('your league of legends username (oce)').setRequired(true)),
     async execute(interaction) {
